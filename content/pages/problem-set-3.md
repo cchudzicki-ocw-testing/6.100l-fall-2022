@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
 ## 3) Letter Frequencies
 
-Now, given a word in the form of a string, let's create a dictionary with each letter as the key and how many times each letter occurs in the word as the value. That sounds very similar to `**get_frequencies**`**...**
+Now, given a word in the form of a string, let's create a dictionary with each letter as the key and how many times each letter occurs in the word as the value. That sounds very similar to `**get_frequencies**`**…**
 
 **You must call** `**get_frequencies**` **in your** `**get_letter_frequencies**` **to get full credit.**
 
@@ -135,11 +135,9 @@ if __name__ == "__main__":
 
 Now it’s time to calculate similarity! Complete the function `**calculate_similarity_score**` based on the definition of **similarity** found in the next paragraph. Your function should be able to be used with the outputs of `get_frequencies` or `get_letter_frequencies`.
 
-Consider two lists �1*L*1​ and �2*L*2​. Let �*U* be a list made up of all the elements in �1*L*1​ or �2*L*2​, but with no repeats (e.g. if �1=\[‘a’, ‘b’\],�2=\[‘b’, ‘c’\]*L*1​=\[‘a’, ‘b’\],*L*2​=\[‘b’, ‘c’\], then �=\[‘a’, ‘b’, ‘c’\]*U*\=\[‘a’, ‘b’, ‘c’\]). For an element �*e* in �1*L*1​ or �2*L*2​, let
+Consider two lists \\(L_1\\)​ and \\(L_2\\). Let \\(U\\) be a list made up of all the elements in \\(L_1\\)​ or \\(L_2\\), but with no repeats (e.g. if \\(L_1 = ['a', 'b'], L_2 = ['b', 'c']\\) then \\(U = ['a', 'b', 'c']\\)). For an element \\(e\\) in \\(L_1\\)​ or \\(L2\\)​, let
 
- 
-
-count(�,��)={number of times � appears in ��if � in ��,0 if � not in ��.count(*e*,*Li*​)={number of times *e* appears in *Li*​0​if *e* in *Li*​, if *e* not in *Li*​.​
+\\(count(e, L_i) = \\) 
 
  
 
@@ -152,9 +150,9 @@ We can then define:
 
  
 
-1−�(�1)+�(�2)+�(�3)+...�(�1)+�(�2)+�(�3)+...1−*σ*(*u*1​)+*σ*(*u*2​)+*σ*(*u*3​)+...*δ*(*u*1​)+*δ*(*u*2​)+*δ*(*u*3​)+...​
+1−�(�1)+�(�2)+�(�3)+…�(�1)+�(�2)+�(�3)+…1−*σ*(*u*1​)+*σ*(*u*2​)+*σ*(*u*3​)+…*δ*(*u*1​)+*δ*(*u*2​)+*δ*(*u*3​)+…​
 
-where the sums are taken over all the elements �1,�2,�3,...*u*1​,*u*2​,*u*3​,... of �*U*, and **the result is rounded to two decimal places**.
+where the sums are taken over all the elements �1,�2,�3,…*u*1​,*u*2​,*u*3​,… of �*U*, and **the result is rounded to two decimal places**.
 
  
 
