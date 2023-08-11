@@ -16,7 +16,7 @@ uid: 48f7b4c9-8540-483e-87fc-db63fc549210
 ### 1.2) Overview
 
 - Complete each of the **three** problems in the respective python files: **ps1a.py, ps1b.py** and **ps1c.py**
-- Include **comments** to help us understand your code — read the [Style Guide](https://introcomp.mit.edu/6.100L_fa22/styleguide) for more specific instructions regarding this.
+- Include **comments** to help us understand your code — read the Style Guide for more specific instructions regarding this.
 - **ps1\_tester.py** is a tester file that you may run to test your code. **Make sure ps1\_tester.py is in the same folder as ps1a.py, ps1b.py, ps1c.py, and put\_in\_function.py.**
 
 ### 1.3) Collaboration
@@ -25,11 +25,11 @@ uid: 48f7b4c9-8540-483e-87fc-db63fc549210
 - Buddies may work together and submit the same code.
 - Students are not permitted to look at or copy each other's code or code structure.
 - Include the names of your collaborators in comment at the start of each file.
-- **Please refer to the collaboration policy in the** [**Course Information**](https://introcomp.mit.edu/6.100L_fa22/information) **for more details.**
+- **Please refer to the collaboration policy in the** **Course Information** **for more details.**
 
 ### 1.4) Important Notes
 
-- Read the [Style Guide](https://introcomp.mit.edu/6.100L_fa22/styleguide) sections 1, 2, 3, and 4.
+- Read the Style Guide sections 1, 2, 3, and 4.
 - If you get an error like `ModuleNotFoundError: No module named 'ps1b_in_function'` at any point, restart the Spyder kernel.
 - **Get user input and declare variables under the correct comment headers in ps1a.py, ps1b.py, and ps1c.py. Failure to do so (e.g. using different variable names where specified or declaring them under the wrong comment headers) will result in a 0 by the grader.**
 - **Do not remove or change any of the comments that are provided in the original ps1a.py, ps1b.py, and ps1c.py files.**
@@ -78,7 +78,7 @@ Your goal is to **find the number of months it takes to save up for a down payme
 
 **Test Case 1**
 
-```plaintext
+```python
 Enter your yearly salary: 112000
 Enter the percent of your salary to save, as a decimal: .17
 Enter the cost of your dream home: 750000
@@ -87,7 +87,7 @@ Number of months: 97
 
 **Test Case 2**
 
-```plaintext
+```python
 Enter your yearly salary: 65000
 Enter the percent of your salary to save, as a decimal: .20
 Enter the cost of your dream home: 400000
@@ -96,7 +96,7 @@ Number of months: 79
 
 **Test Case 3**
 
-```plaintext
+```python
 Enter your yearly salary: 350000
 Enter the percent of your salary to save, as a decimal: .3
 Enter the cost of your dream home: 10000000
@@ -147,7 +147,7 @@ In Part A, we assumed that your salary did not change over time. However, you ar
 
 **Test Case 1**
 
-```plaintext
+```python
 Enter your starting yearly salary: 110000
 Enter the percent of your salary to save, as a decimal: .15
 Enter the cost of your dream home: 750000
@@ -157,7 +157,7 @@ Number of months: 92
 
 **Test Case 2**
 
-```plaintext
+```python
 Enter your starting yearly salary: 350000
 Enter the percent of your salary to save, as a decimal: .3
 Enter the cost of your dream home: 10000000
@@ -190,7 +190,7 @@ In Part C, we will have a **fixed initial amount** and the ability to choose a v
 
 Use the following formula for compound interest in order to calculate the predicted savings amount given a rate of return `r`, an `initial_deposit`, and `months`:
 
-> amount\_saved = initial\_deposit \* (1 + r/12)<sup>months</sup>
+\\(amount\_saved = initial\_deposit * (1 + \frac{r}{12})^{months}\\)
 
 You will use [bisection search](https://youtu.be/SE4P7IVCunE?t=2149) to determine the **lowest** rate of return `r` that is needed to achieve a down payment on a $800,000 house in 36 months. Since hitting this exact amount is a bit of a challenge, we only require that your savings be within $100 of the required down payment. For example, if the down payment is $1000, the total amount saved should be between $900 and $1100 (exclusive).
 
