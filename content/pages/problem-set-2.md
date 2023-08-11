@@ -360,7 +360,7 @@ Please refer to the appendix at the end of this handout for an example of a comp
 
 1. The game ends when the user guesses all the letters in `**secret_word**` or has 0 guesses remaining.
 2. If the user wins, print a congratulatory message, and tell the user their score.
-    - \\(total\_score = (guesses\_remaining +4+\text{number of unique letters in } secret_word) + (3 * \text{length of } secret\_word).  \\) 
+    - \\(total\_score = (guesses\_remaining +4+\text{number of unique letters in } secret\_word) + (3 \times \text{length of } secret\_word).\\)
 
 - Example: For a game with the secret word “asleep” with 6 guesses remaining, there are a total of 5 unique letters (`a`, `s`, `l`, `e`, and `p`). Thus, the final score is: (6 + 4 × 5) + (3 × 6) = 44.
 
