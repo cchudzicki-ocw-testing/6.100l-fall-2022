@@ -93,7 +93,7 @@ test_has_player_won_repeated_letters (__main__.TestPS2) ... ok
 
 Next, implement the function `**get_word_progress**` according to its docstring. This should be fairly similar to `**has_player_won**`.
 
-**Hint**: Think about...
+**Hint**: Think about…
 
 - if you need to store information as you loop over a data structure
 - how you want to add information to your accumulated result
@@ -360,7 +360,7 @@ Please refer to the appendix at the end of this handout for an example of a comp
 
 1. The game ends when the user guesses all the letters in `**secret_word**` or has 0 guesses remaining.
 2. If the user wins, print a congratulatory message, and tell the user their score.
-    - `total_score` = (`guesses_remaining` +4 × number of unique letters in `secret_word`) + (3 × length of `secret_word`)
+    - \\(total\_score = (guesses\_remaining +4+\text{number of unique letters in } secret_word) + (3 * \text{length of } secret\_word).  \\) 
 
 - Example: For a game with the secret word “asleep” with 6 guesses remaining, there are a total of 5 unique letters (`a`, `s`, `l`, `e`, and `p`). Thus, the final score is: (6 + 4 × 5) + (3 × 6) = 44.
 
