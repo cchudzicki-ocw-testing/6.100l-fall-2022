@@ -137,9 +137,7 @@ Now it’s time to calculate similarity! Complete the function `**calculate_simi
 
 Consider two lists \\(L_1\\)​ and \\(L_2\\). Let \\(U\\) be a list made up of all the elements in \\(L_1\\)​ or \\(L_2\\), but with no repeats (e.g. if \\(L_1 = ['a', 'b'], L_2 = ['b', 'c']\\) then \\(U = ['a', 'b', 'c']\\)). For an element \\(e\\) in \\(L_1\\)​ or \\(L2\\)​, let
 
-\\(count(e, L_i) = \\) 
-
- 
+\\(count(e, L_i) = \begin{cases}  \text{ number of times } e \text{ appears in } L_1 & \text{if } e \text{ in } L_i \\\\ 0 & \text{if } e \text{ not in } L_i \end{cases} \\\\  \\) 
 
 We can then define:
 
