@@ -190,7 +190,7 @@ In Part C, we will have a **fixed initial amount** and the ability to choose a v
 
 Use the following formula for compound interest in order to calculate the predicted savings amount given a rate of return `r`, an `initial_deposit`, and `months`:
 
-\\(amount\text{_}saved = initial\text{_}deposit \times (1 + \frac{r}{12})^{months}\\)
+\\(amount\text{<em>}saved = initial\text{</em>}deposit \times (1 + \frac{r}{12})^{months}\\)
 
 You will use [bisection search](https://youtu.be/SE4P7IVCunE?t=2149) to determine the **lowest** rate of return `r` that is needed to achieve a down payment on a $800,000 house in 36 months. Since hitting this exact amount is a bit of a challenge, we only require that your savings be within $100 of the required down payment. For example, if the down payment is $1000, the total amount saved should be between $900 and $1100 (exclusive).
 
