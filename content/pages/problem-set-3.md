@@ -137,12 +137,12 @@ Now it’s time to calculate similarity! Complete the function `**calculate_simi
 
 Consider two lists \\(L_1\\)​ and \\(L_2\\). Let \\(U\\) be a list made up of all the elements in \\(L_1\\)​ or \\(L_2\\), but with no repeats (e.g. if \\(L_1 = ['a', 'b'], L_2 = ['b', 'c']\\) then \\(U = ['a', 'b', 'c']\\)). For an element \\(e\\) in \\(L_1\\)​ or \\(L2\\)​, let
 
-\\(count(e, L_i) = \begin{cases}  \text{ number of times } e \text{ appears in } L_1 & \text{if } e \text{ in } L_i \\\\ 0 & \text{if } e \text{ not in } L_i \end{cases} \\\\  \\) 
+\\(count(e, L_i) = \begin{cases} \text{ number of times } e \text{ appears in } L_1 & \text{if } e \text{ in } L_i \\\\ 0 & \text{if } e \text{ not in } L_i \end{cases} \\\\\\)
 
 We can then define:
 
-- �(�)=∣count(�,�1)−count(�,�2)∣*δ*(*e*)=∣count(*e*,*L*1​)−count(*e*,*L*2​)∣ (where the vertical bars denote absolute value), and
-- �(�)=count(�,�1)+count(�,�2)*σ*(*e*)=count(*e*,*L*1​)+count(*e*,*L*2​).
+- \\(\delta (e) = | \text{count}(e, L_1) - \text{count}(e, L_2)|\\) (where the vertical bars denote absolute value), and
+- \\(\sigma (e) = \text{count}(e, L_1) + \text{count}(e, L_2).\\).
 
 **Similarity** is defined as:
 
